@@ -1,0 +1,44 @@
+//Function of Arithmetic operation
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+<script type="text/javascript">
+	var br = "<br>";
+
+//call by value
+
+	function add( a,b){
+		 c =  a+b;
+		document.write("Addition = ",c,br);
+	}
+	function multi(x,z){
+		w= x*z;
+		document.write("Multi = ",w,br);
+	}
+
+//call by reference
+
+	var p = 10;
+	var q = 5;
+	function sub(p,q){
+		c = p-q;
+		document.write("Sub = ",c,br);
+	}
+	r=8;
+	s=4;
+	function div(r,s){
+		c = r/s;
+		document.write("Div = ",c,br);
+	}
+	add(3,4);
+	sub(p,q);
+	multi(2,1);
+	div(r,s);
+</script>
+</body>
+</html>
